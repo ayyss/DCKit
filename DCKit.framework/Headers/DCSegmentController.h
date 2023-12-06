@@ -47,6 +47,9 @@ NS_ASSUME_NONNULL_BEGIN
 - (BOOL)hideScrollLine;
 - (UIColor *)lineColor;
 
+- (CGFloat)lineHeight;
+- (CGFloat)lineCornerRadius;
+
 @end
 
 @interface DCSegmentController : UIViewController

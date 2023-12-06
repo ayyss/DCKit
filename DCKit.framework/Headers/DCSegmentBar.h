@@ -40,6 +40,8 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)titleBarDidScroll;
 - (void)titleBarDidEndScroll;
 - (BOOL)hideScrollLine;
+- (CGFloat)lineHeight;
+- (CGFloat)lineCornerRadius;
 
 @end
 
