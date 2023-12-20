@@ -38,6 +38,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (void)reloadData;
 
+@property (strong, nonatomic) UIColor *collectionViewColor;
+
 - (CGFloat)contentHeight;
 
 @end
