@@ -22,21 +22,17 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (void)setAlightLeftAndRightWithWidth:(CGFloat)labelWidth;
 
-/// 文字，颜色
 + (instancetype)labelWithFont:(UIFont *)font
                     textColor:(UIColor *)textColor;
 
-/// 文字，颜色，对齐
 + (instancetype)labelWithFont:(UIFont *)font
                     textColor:(UIColor *)textColor
                 textAlignment:(NSTextAlignment)textAlignment;
 
-/// 文字，颜色，自适应宽度
 + (instancetype)labelWithFont:(UIFont *)font
                     textColor:(UIColor *)textColor
                sizeToFitWidth:(BOOL)sizeToFitWidth;
 
-/// 文字，颜色，对齐，自适应宽度
 + (instancetype)labelWithFont:(UIFont *)font
                     textColor:(UIColor *)textColor
                 textAlignment:(NSTextAlignment)textAlignment

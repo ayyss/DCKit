@@ -11,6 +11,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface UIImage (DC)
 
+- (NSData *)compressBySizeWithMaxLength:(NSUInteger)maxLength;
+
 + (UIImage *)compressImage:(UIImage *)sourceImage toTargetWidth:(CGFloat)targetWidth;
 
 + (UIImage *)getTheLaunchImage;
