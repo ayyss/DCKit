@@ -24,7 +24,9 @@ FOUNDATION_EXPORT const unsigned char DCKitVersionString[];
 #import <DCKit/DCTagItem.h>
 #import <DCKit/DCIntrinsicView.h>
 #import <DCKit/DCTextView.h>
+#import <DCKit/DCSpTextView.h>
 #import <DCKit/DCCollectionView.h>
+#import <DCKit/DCRecognizerTableView.h>
 
 #import <DCKit/DCSegmentController.h>
 
