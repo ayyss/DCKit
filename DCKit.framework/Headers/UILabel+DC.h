@@ -22,6 +22,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (void)setAlightLeftAndRightWithWidth:(CGFloat)labelWidth;
 
+- (void)setActualHeight;
+- (void)setActualWidth;
+
 + (instancetype)labelWithFont:(UIFont *)font
                     textColor:(UIColor *)textColor;
 

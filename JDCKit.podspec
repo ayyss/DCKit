@@ -1,7 +1,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "JDCKit"
-  spec.version      = "0.2.0"
+  spec.version      = "0.2.1"
   spec.summary      = "DCKit"
 
   spec.description  = <<-DESC
