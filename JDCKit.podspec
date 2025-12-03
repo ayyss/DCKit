@@ -1,7 +1,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "JDCKit"
-  spec.version      = "0.2.2"
+  spec.version      = "0.2.3"
   spec.summary      = "DCKit"
 
   spec.description  = <<-DESC
@@ -17,7 +17,7 @@ Pod::Spec.new do |spec|
 
   spec.source       = { :git => "https://github.com/ayyss/DCKit.git", :tag => "#{spec.version}" }
   # spec.resources = "Resources/*.png"
-  spec.ios.vendored_frameworks = 'DCKit.framework'
+  spec.ios.vendored_frameworks = 'DCKit.xcframework'
 
   spec.frameworks = "UIKit", "Foundation"
   # spec.libraries = "iconv", "xml2"

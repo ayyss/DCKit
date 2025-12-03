@@ -34,6 +34,13 @@ extension Swift.String {
   public func getWidth(_ font: UIKit.UIFont) -> CoreFoundation.CGFloat
   public func getHeightWithWidth(_ width: CoreFoundation.CGFloat, _ font: UIKit.UIFont) -> CoreFoundation.CGFloat
 }
+extension UIKit.UIApplication {
+  #if compiler(>=5.3) && $NonescapableTypes
+  @_Concurrency.MainActor @preconcurrency public var activeKeyWindow: UIKit.UIWindow? {
+    get
+  }
+  #endif
+}
 @objc @_inheritsConvenienceInitializers @objcMembers public class DCCommon : ObjectiveC.NSObject {
   #if compiler(>=5.3) && $NonescapableTypes
   @objc public static var keyWindow: UIKit.UIWindow? {

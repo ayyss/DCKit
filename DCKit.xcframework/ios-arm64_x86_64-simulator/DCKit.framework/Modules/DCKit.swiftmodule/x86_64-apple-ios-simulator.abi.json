@@ -1783,7 +1783,8 @@
             "isOpen": true,
             "declAttributes": [
               "Preconcurrency",
-              "Custom"
+              "Custom",
+              "AccessControl"
             ],
             "isFromExtension": true,
             "accessors": [
