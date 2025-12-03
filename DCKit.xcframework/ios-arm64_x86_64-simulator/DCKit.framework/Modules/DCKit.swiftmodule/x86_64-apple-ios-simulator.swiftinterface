@@ -1,0 +1,45 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 6.2 effective-5.10 (swiftlang-6.2.0.19.9 clang-1700.3.19.1)
+// swift-module-flags: -target x86_64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -Onone -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name DCKit
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2
+@_exported import DCKit
+import Foundation
+import SDWebImage
+import SnapKit
+import Swift
+import UIKit
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+extension Swift.String {
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func toHtml(preText: Swift.Bool = false) -> Foundation.NSAttributedString?
+  #endif
+  public var htmlToString: Swift.String {
+    get
+  }
+}
+extension UIKit.UIView {
+  @_Concurrency.MainActor @preconcurrency public func addShadowInSuperView()
+  @_Concurrency.MainActor @preconcurrency public func addShadow(shadowColor: UIKit.UIColor = UIColor.black.withAlphaComponent(0.4), shadowOpacity: Swift.Float = 0.15, shadowOffset: CoreFoundation.CGSize = CGSize.zero, shadowRadius: CoreFoundation.CGFloat = 5, corners: UIKit.UIRectCorner = .allCorners, cornerRadii: CoreFoundation.CGSize = CGSize(width: 10, height: 10))
+}
+extension Dispatch.DispatchQueue {
+  public class func once(file: Swift.String = #file, function: Swift.String = #function, line: Swift.Int = #line, block: () -> Swift.Void)
+}
+extension Swift.String {
+  public func nsRange(from range: Swift.Range<Swift.String.Index>) -> Foundation.NSRange
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func range(from nsRange: Foundation.NSRange) -> Swift.Range<Swift.String.Index>?
+  #endif
+  public func getWidth(_ font: UIKit.UIFont) -> CoreFoundation.CGFloat
+  public func getHeightWithWidth(_ width: CoreFoundation.CGFloat, _ font: UIKit.UIFont) -> CoreFoundation.CGFloat
+}
+@objc @_inheritsConvenienceInitializers @objcMembers public class DCCommon : ObjectiveC.NSObject {
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc public static var keyWindow: UIKit.UIWindow? {
+    @objc get
+  }
+  #endif
+  @objc override dynamic public init()
+  @objc deinit
+}

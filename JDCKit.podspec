@@ -1,7 +1,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "JDCKit"
-  spec.version      = "0.2.1"
+  spec.version      = "0.2.2"
   spec.summary      = "DCKit"
 
   spec.description  = <<-DESC
@@ -29,7 +29,6 @@ Pod::Spec.new do |spec|
 
   spec.dependency "SnapKit"
   spec.dependency "Masonry"
-  spec.dependency "YYKit"
   spec.dependency "SDWebImage"
   spec.dependency "SDWebImageWebPCoder"
 end

@@ -1,0 +1,11 @@
+framework module DCKit {
+  umbrella header "DCKit.h"
+  export *
+
+  module * { export * }
+}
+
+module DCKit.Swift {
+  header "DCKit-Swift.h"
+  requires objc
+}
