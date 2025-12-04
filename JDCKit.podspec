@@ -1,7 +1,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "JDCKit"
-  spec.version      = "0.2.3"
+  spec.version      = "0.2.4"
   spec.summary      = "DCKit"
 
   spec.description  = <<-DESC
@@ -18,13 +18,14 @@ Pod::Spec.new do |spec|
   spec.source       = { :git => "https://github.com/ayyss/DCKit.git", :tag => "#{spec.version}" }
   # spec.resources = "Resources/*.png"
   spec.ios.vendored_frameworks = 'DCKit.xcframework'
+  spec.static_framework = false
 
-  spec.frameworks = "UIKit", "Foundation"
+  #spec.frameworks = "UIKit", "Foundation"
   # spec.libraries = "iconv", "xml2"
 
   spec.requires_arc = true
 
-  spec.pod_target_xcconfig = { 'VALID_ARCHS' => 'x86_64 armv7 arm64'}
+  #spec.pod_target_xcconfig = { 'VALID_ARCHS' => 'x86_64 armv7 arm64'}
   #spec.user_target_xcconfig = { 'IPHONEOS_DEPLOYMENT_TARGET' => '13.0'}
 
   spec.dependency "SnapKit"

@@ -162,7 +162,6 @@
         "usr": "c:@M@DCKit@objc(cs)DCCommon",
         "mangledName": "$s5DCKit8DCCommonC",
         "moduleName": "DCKit",
-        "isOpen": true,
         "declAttributes": [
           "AccessControl",
           "ObjCMembers",
@@ -246,71 +245,6 @@
         "children": [
           {
             "kind": "Function",
-            "name": "dcaddShadow",
-            "printedName": "dcaddShadow(shadowColor:shadowOpacity:shadowOffset:shadowRadius:corners:cornerRadii:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "UIColor",
-                "printedName": "UIKit.UIColor",
-                "hasDefaultArg": true,
-                "usr": "c:objc(cs)UIColor"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Float",
-                "printedName": "Swift.Float",
-                "hasDefaultArg": true,
-                "usr": "s:Sf"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "CGSize",
-                "printedName": "CoreFoundation.CGSize",
-                "hasDefaultArg": true,
-                "usr": "c:@S@CGSize"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "CGFloat",
-                "printedName": "CoreGraphics.CGFloat",
-                "hasDefaultArg": true,
-                "usr": "s:14CoreFoundation7CGFloatV"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "UIRectCorner",
-                "printedName": "UIKit.UIRectCorner",
-                "hasDefaultArg": true,
-                "usr": "c:@E@UIRectCorner"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "CGSize",
-                "printedName": "CoreFoundation.CGSize",
-                "hasDefaultArg": true,
-                "usr": "c:@S@CGSize"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:So6UIViewC5DCKitE11dcaddShadow11shadowColor0E7Opacity0E6Offset0E6Radius7corners11cornerRadiiySo7UIColorC_SfSo6CGSizeV14CoreFoundation7CGFloatVSo12UIRectCornerVANtF",
-            "mangledName": "$sSo6UIViewC5DCKitE11dcaddShadow11shadowColor0E7Opacity0E6Offset0E6Radius7corners11cornerRadiiySo7UIColorC_SfSo6CGSizeV12CoreGraphics7CGFloatVSo12UIRectCornerVANtF",
-            "moduleName": "DCKit",
-            "isOpen": true,
-            "declAttributes": [
-              "Preconcurrency",
-              "Custom"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
             "name": "addShadowInSuperView",
             "printedName": "addShadowInSuperView()",
             "children": [
@@ -324,7 +258,6 @@
             "usr": "s:So6UIViewC5DCKitE20addShadowInSuperViewyyF",
             "mangledName": "$sSo6UIViewC5DCKitE20addShadowInSuperViewyyF",
             "moduleName": "DCKit",
-            "isOpen": true,
             "declAttributes": [
               "Preconcurrency",
               "Custom",
@@ -390,7 +323,6 @@
             "usr": "s:So6UIViewC5DCKitE9addShadow11shadowColor0E7Opacity0E6Offset0E6Radius7corners11cornerRadiiySo7UIColorC_SfSo6CGSizeV14CoreFoundation7CGFloatVSo12UIRectCornerVANtF",
             "mangledName": "$sSo6UIViewC5DCKitE9addShadow11shadowColor0E7Opacity0E6Offset0E6Radius7corners11cornerRadiiySo7UIColorC_SfSo6CGSizeV12CoreGraphics7CGFloatVSo12UIRectCornerVANtF",
             "moduleName": "DCKit",
-            "isOpen": true,
             "declAttributes": [
               "Preconcurrency",
               "Custom",
@@ -520,168 +452,6 @@
         "name": "String",
         "printedName": "String",
         "children": [
-          {
-            "kind": "Var",
-            "name": "htmlToAttributedString",
-            "printedName": "htmlToAttributedString",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Foundation.NSAttributedString?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "NSAttributedString",
-                    "printedName": "Foundation.NSAttributedString",
-                    "usr": "c:objc(cs)NSAttributedString"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:SS5DCKitE22htmlToAttributedStringSo012NSAttributedE0CSgvp",
-            "mangledName": "$sSS5DCKitE22htmlToAttributedStringSo012NSAttributedE0CSgvp",
-            "moduleName": "DCKit",
-            "isFromExtension": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "Foundation.NSAttributedString?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "NSAttributedString",
-                        "printedName": "Foundation.NSAttributedString",
-                        "usr": "c:objc(cs)NSAttributedString"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:SS5DCKitE22htmlToAttributedStringSo012NSAttributedE0CSgvg",
-                "mangledName": "$sSS5DCKitE22htmlToAttributedStringSo012NSAttributedE0CSgvg",
-                "moduleName": "DCKit",
-                "isFromExtension": true,
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Function",
-            "name": "dc_HtmlToAttributedString",
-            "printedName": "dc_HtmlToAttributedString()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Foundation.NSAttributedString?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "NSAttributedString",
-                    "printedName": "Foundation.NSAttributedString",
-                    "usr": "c:objc(cs)NSAttributedString"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:SS5DCKitE25dc_HtmlToAttributedStringSo012NSAttributedF0CSgyF",
-            "mangledName": "$sSS5DCKitE25dc_HtmlToAttributedStringSo012NSAttributedF0CSgyF",
-            "moduleName": "DCKit",
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "dc_nsRange",
-            "printedName": "dc_nsRange(from:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "_NSRange",
-                "printedName": "Foundation._NSRange",
-                "usr": "c:@S@_NSRange"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Range",
-                "printedName": "Swift.Range<Swift.String.Index>",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Index",
-                    "printedName": "Swift.String.Index",
-                    "usr": "s:SS5IndexV"
-                  }
-                ],
-                "usr": "s:Sn"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:SS5DCKitE10dc_nsRange4fromSo8_NSRangeVSnySS5IndexVG_tF",
-            "mangledName": "$sSS5DCKitE10dc_nsRange4fromSo8_NSRangeVSnySS5IndexVG_tF",
-            "moduleName": "DCKit",
-            "declAttributes": [
-              "RawDocComment"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "dc_range",
-            "printedName": "dc_range(from:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.Range<Swift.String.Index>?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Range",
-                    "printedName": "Swift.Range<Swift.String.Index>",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Index",
-                        "printedName": "Swift.String.Index",
-                        "usr": "s:SS5IndexV"
-                      }
-                    ],
-                    "usr": "s:Sn"
-                  }
-                ],
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "_NSRange",
-                "printedName": "Foundation._NSRange",
-                "usr": "c:@S@_NSRange"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:SS5DCKitE8dc_range4fromSnySS5IndexVGSgSo8_NSRangeV_tF",
-            "mangledName": "$sSS5DCKitE8dc_range4fromSnySS5IndexVGSgSo8_NSRangeV_tF",
-            "moduleName": "DCKit",
-            "declAttributes": [
-              "RawDocComment"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
           {
             "kind": "Function",
             "name": "toHtml",
@@ -1493,52 +1263,6 @@
           {
             "kind": "Function",
             "name": "once",
-            "printedName": "once(token:block:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "() -> ()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "typeAttributes": [
-                  "noescape"
-                ]
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:So17OS_dispatch_queueC5DCKitE4once5token5blockySS_yyXEtFZ",
-            "mangledName": "$sSo17OS_dispatch_queueC5DCKitE4once5token5blockySS_yyXEtFZ",
-            "moduleName": "DCKit",
-            "static": true,
-            "isOpen": true,
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "once",
             "printedName": "once(file:function:line:block:)",
             "children": [
               {
@@ -1593,7 +1317,6 @@
             "mangledName": "$sSo17OS_dispatch_queueC5DCKitE4once4file8function4line5blockySS_SSSiyyXEtFZ",
             "moduleName": "DCKit",
             "static": true,
-            "isOpen": true,
             "declAttributes": [
               "AccessControl"
             ],
@@ -1780,7 +1503,6 @@
             "usr": "s:So13UIApplicationC5DCKitE15activeKeyWindowSo8UIWindowCSgvp",
             "mangledName": "$sSo13UIApplicationC5DCKitE15activeKeyWindowSo8UIWindowCSgvp",
             "moduleName": "DCKit",
-            "isOpen": true,
             "declAttributes": [
               "Preconcurrency",
               "Custom",
@@ -1812,7 +1534,6 @@
                 "usr": "s:So13UIApplicationC5DCKitE15activeKeyWindowSo8UIWindowCSgvg",
                 "mangledName": "$sSo13UIApplicationC5DCKitE15activeKeyWindowSo8UIWindowCSgvg",
                 "moduleName": "DCKit",
-                "isOpen": true,
                 "isFromExtension": true,
                 "accessorKind": "get"
               }
